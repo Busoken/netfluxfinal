@@ -381,9 +381,9 @@
     },
     {
       "name": "package_info_plus",
-      "rootUri": "file:///C:/Users/busok/AppData/Local/Pub/Cache/hosted/pub.dev/package_info_plus-5.0.1",
+      "rootUri": "file:///C:/Users/busok/AppData/Local/Pub/Cache/hosted/pub.dev/package_info_plus-4.2.0",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "2.18"
     },
     {
       "name": "package_info_plus_platform_interface",
@@ -752,6 +752,12 @@
       "languageVersion": "3.1"
     },
     {
+      "name": "video_player_win",
+      "rootUri": "file:///C:/Users/busok/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_win-2.3.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "vm_service",
       "rootUri": "file:///C:/Users/busok/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-13.0.0",
       "packageUri": "lib/",
@@ -842,7 +848,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-03-31T08:21:42.998575Z",
+  "generated": "2024-03-31T15:14:23.833173Z",
   "generator": "pub",
   "generatorVersion": "3.3.0"
 }

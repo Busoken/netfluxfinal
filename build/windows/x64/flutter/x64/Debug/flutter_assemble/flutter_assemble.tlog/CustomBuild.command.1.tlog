@@ -1,0 +1,28 @@
+^C:\USERS\BUSOK\DOWNLOADS\NETFLUX_FINAL\NETFLUX\BUILD\WINDOWS\X64\CMAKEFILES\D4FEFCEDCFC91A95DFD7966E3CD7E2FF\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\busok\Downloads\flutter\flutter PROJECT_DIR=C:\Users\busok\Downloads\netflux_final\netflux FLUTTER_ROOT=C:\Users\busok\Downloads\flutter\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\busok\Downloads\netflux_final\netflux\windows\flutter\ephemeral PROJECT_DIR=C:\Users\busok\Downloads\netflux_final\netflux FLUTTER_TARGET=C:\Users\busok\Downloads\netflux_final\netflux\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC8wNDgxN2M5OWM5ZmQ0OTU2ZjI3NTA1MjA0ZjdlMzQ0MzM1ODEwYWVkLw== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Users\busok\Downloads\netflux_final\netflux\.dart_tool\package_config.json C:/Users/busok/Downloads/flutter/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BUSOK\DOWNLOADS\NETFLUX_FINAL\NETFLUX\BUILD\WINDOWS\X64\CMAKEFILES\0022402446CA1E5CD356D93BAEC78C37\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\BUSOK\DOWNLOADS\NETFLUX_FINAL\NETFLUX\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/busok/Downloads/netflux_final/netflux/windows -BC:/Users/busok/Downloads/netflux_final/netflux/build/windows/x64 --check-stamp-file C:/Users/busok/Downloads/netflux_final/netflux/build/windows/x64/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

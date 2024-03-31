@@ -1,0 +1,10 @@
+^C:\USERS\BUSOK\DOWNLOADS\NETFLUX_FINAL\NETFLUX\BUILD\WINDOWS\X64\CMAKEFILES\381511574B56C4332A9431234D807EA9\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -91,7 +91,7 @@ class _WatchlistWidgetState extends State<WatchlistWidget> {
                         builder: (context) {
                           final imageurl = TetsCall.imageurl(
                                 gridViewTetsResponse.jsonBody,
-                              )?.toList() ??
+                              )?.unique((e) => e).toList() ??
                               [];
                           return GridView.builder(
                             padding: EdgeInsets.zero,
