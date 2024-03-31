@@ -1,10 +1,7 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:supabase_flutter/supabase_flutter.dart' hide Provider;
 
 export 'database/database.dart';
-
-const _kSupabaseUrl = 'https://htwqmzblresezidexpyx.supabase.co';
-const _kSupabaseAnonKey =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh0d3FtemJscmVzZXppZGV4cHl4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc2NDMyMTMsImV4cCI6MjAyMzIxOTIxM30.JEXazetwodZ1Nnhvc8dr3nmuQVIlnT3dAHM1sIPXsBo';
 
 class SupaFlow {
   SupaFlow._();
@@ -15,9 +12,12 @@ class SupaFlow {
   final _supabase = Supabase.instance.client;
   static SupabaseClient get client => instance._supabase;
 
-  static Future initialize() => Supabase.initialize(
-        url: _kSupabaseUrl,
-        anonKey: _kSupabaseAnonKey,
-        debug: false,
-      );
+  static Future initialize() async {
+    await dotenv.load(fileName: ".env"); // Make sure to load environment variables
+    return Supabase.initialize(
+      url: dotenv.env['SUPABASE_URL']!, // Use the variables from .env
+      anonKey: dotenv.env['SUPABASE_ANON_KEY']!,
+      debug: false,
+    );
+  }
 }
